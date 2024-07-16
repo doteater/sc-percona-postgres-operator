@@ -31,11 +31,11 @@ spec:
 #      password:
 #        type: ASCII
 #      secretName: "rhino-credentials"
-users: 
-  - name: netbox
-    databases:
-      - netbox
-    options: "SUPERUSER"
+  users: 
+    - name: netbox
+      databases:
+        - netbox
+      options: "SUPERUSER"
 
 #  databaseInitSQL:
 #    key: init.sql
