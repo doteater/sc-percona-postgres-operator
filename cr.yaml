@@ -446,7 +446,7 @@ spec:
     image: percona/pmm-client:2.42.0
 #    imagePullPolicy: IfNotPresent
     secret: cluster1-pmm-secret
-    serverHost: 10.9.14.100
+    serverHost: monitoring-service
 #  patroni:
 #    # Some values of the Liveness/Readiness probes of the patroni container are calulated using syncPeriodSeconds by the following formulas:
 #    # - timeoutSeconds:   syncPeriodSeconds / 2;
@@ -463,7 +463,7 @@ spec:
 #          work_mem: 2MB
 
 #  extensions:
-#    image: perconalab/percona-postgresql-operator:main
+#    image: percona/percona-postgresql-operator:2.4.0
 #    imagePullPolicy: Always
 #    storage:
 #      type: s3
