@@ -34,11 +34,9 @@ users:
     databases:
       - netbox
     options: "SUPERUSER"
-
 #  databaseInitSQL:
 #    key: init.sql
 #    name: cluster1-init-sql
-
 #  pause: true
 #  unmanaged: true
 #  dataSource:
@@ -108,8 +106,6 @@ users:
 #          test-annotation: value
 #        labels:
 #          test-label: value
-
-
   image: percona/percona-postgresql-operator:2.4.0-ppg16.3-postgres
   imagePullPolicy: Always
   postgresVersion: 16
