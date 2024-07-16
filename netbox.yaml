@@ -12,7 +12,9 @@ spec:
 #      name: cluster1-cert
 #    customReplicationTLSSecret:
 #      name: replication1-cert
-
+  image: percona/percona-postgresql-operator:2.4.0-ppg16.3-postgres
+  imagePullPolicy: Always
+  postgresVersion: 16
 #  standby:
 #    enabled: true
 #    host: "<primary-ip>"
@@ -34,6 +36,7 @@ users:
     databases:
       - netbox
     options: "SUPERUSER"
+
 #  databaseInitSQL:
 #    key: init.sql
 #    name: cluster1-init-sql
@@ -106,9 +109,6 @@ users:
 #          test-annotation: value
 #        labels:
 #          test-label: value
-  image: percona/percona-postgresql-operator:2.4.0-ppg16.3-postgres
-  imagePullPolicy: Always
-  postgresVersion: 16
 #  port: 5432
 
 #  expose:
