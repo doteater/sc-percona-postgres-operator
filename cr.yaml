@@ -2,7 +2,7 @@ apiVersion: pgv2.percona.com/v2
 kind: PerconaPGCluster
 metadata:
   name: cluster1
-#  finalizers:
+##  finalizers:
 #  - percona.com/delete-pvc
 #  - percona.com/delete-ssl
 spec:
