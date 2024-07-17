@@ -22,11 +22,11 @@ spec:
 
 #  openshift: true
 
-#  users:
-#    - name: rhino
-#      databases:
-#        - zoo
-#      options: "SUPERUSER"
+  users:
+    - name: netbox
+      databases:
+        - netbox
+      options: "SUPERUSER"
 #      password:
 #        type: ASCII
 #      secretName: "rhino-credentials"
