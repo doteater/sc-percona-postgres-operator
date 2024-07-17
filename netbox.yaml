@@ -2,6 +2,7 @@ apiVersion: pgv2.percona.com/v2
 kind: PerconaPGCluster
 metadata:
   name: netbox
+  namespace: postgres-operator
 ##  finalizers:
 #  - percona.com/delete-pvc
 #  - percona.com/delete-ssl
@@ -12,7 +13,9 @@ spec:
 #      name: cluster1-cert
 #    customReplicationTLSSecret:
 #      name: replication1-cert
-
+  image: percona/percona-postgresql-operator:2.4.0-ppg16.3-postgres
+  imagePullPolicy: Always
+  postgresVersion: 16
 #  standby:
 #    enabled: true
 #    host: "<primary-ip>"
@@ -29,11 +32,15 @@ spec:
 #      password:
 #        type: ASCII
 #      secretName: "rhino-credentials"
+  users: 
+    - name: netbox
+      databases:
+        - netbox
+      options: "SUPERUSER"
 
 #  databaseInitSQL:
 #    key: init.sql
 #    name: cluster1-init-sql
-
 #  pause: true
 #  unmanaged: true
 #  dataSource:
@@ -103,11 +110,6 @@ spec:
 #          test-annotation: value
 #        labels:
 #          test-label: value
-
-
-  image: percona/percona-postgresql-operator:2.4.0-ppg16.3-postgres
-  imagePullPolicy: Always
-  postgresVersion: 16
 #  port: 5432
 
 #  expose:
@@ -475,3 +477,6 @@ spec:
 #    builtin:
 #      pg_stat_monitor: true
 #      pg_audit: true
+#    custom:
+#    - name: pg_cron
+#      version: 1.6.1
