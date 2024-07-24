@@ -443,7 +443,7 @@ spec:
 #          value: connection-poolers
 
   pmm:
-    enabled: true
+    enabled: false
     image: perconalab/pmm-client:2.42.0
 #    imagePullPolicy: IfNotPresent
     secret: netbox-pmm-secret
