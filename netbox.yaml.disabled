@@ -29,7 +29,7 @@ spec:
       options: "SUPERUSER"
 #      password:
 #        type: ASCII
-#      secretName: "rhino-credentials"
+      secretName: "netbox-postgresql"
 
 #  databaseInitSQL:
 #    key: init.sql
