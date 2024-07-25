@@ -29,7 +29,7 @@ spec:
       options: "SUPERUSER"
 #      password:
 #        type: ASCII
-      secretName: "netbox-postgresql"
+   ###   secretName: "netbox-postgresql"
 
 #  databaseInitSQL:
 #    key: init.sql
