@@ -443,11 +443,11 @@ spec:
 #          value: connection-poolers
 
   pmm:
-    enabled: false
+    enabled: true
     image: perconalab/pmm-client:2.42.0
 #    imagePullPolicy: IfNotPresent
-    secret: netbox-pmm-secret
-    serverHost: 10.9.14.100
+    secret: pg-operator-pmm-secret
+    serverHost: pmm1.sentracam.net
 #  patroni:
 #    # Some values of the Liveness/Readiness probes of the patroni container are calulated using syncPeriodSeconds by the following formulas:
 #    # - timeoutSeconds:   syncPeriodSeconds / 2;
