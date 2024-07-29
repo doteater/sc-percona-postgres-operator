@@ -407,7 +407,7 @@ spec:
       manual:
         repoName: repo1
         options:
-         - --type=full
+         - "--type=full"
       repos:
       - name: repo1
         schedules:
