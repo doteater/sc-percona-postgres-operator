@@ -31,9 +31,9 @@ spec:
 #        type: ASCII
 #      secretName: "rhino-credentials"
 
-  databaseInitSQL:
-    key: init.sql
-    name: gitlab-init-sql
+#  databaseInitSQL:
+#    key: init.sql
+#    name: gitlab-init-sql
 
 #  pause: true
 #  unmanaged: true
