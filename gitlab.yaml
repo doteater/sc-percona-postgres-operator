@@ -106,7 +106,7 @@ spec:
 #          test-label: value
 
 
-  image: perconalab/percona-postgresql-operator:main-ppg16-postgres
+  image: perconalab/percona-postgresql-operator:main-ppg15-postgres
   imagePullPolicy: Always
   postgresVersion: 15
 #  port: 5432
