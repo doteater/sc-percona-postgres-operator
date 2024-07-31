@@ -4,7 +4,7 @@ metadata:
   name: gitlab-init-sql
 data: 
   init.sql: |
-    CREATE DATABASE gitlab-main;
-    CREATE DATABASE gitlab-ci;
-    GRANT ALL PRIVILEGES ON DATABASE gitlab-main TO gitlab;
-    GRANT ALL PRIVILEGES ON DATABASE gitlab-ci TO gitlab;
+    CREATE DATABASE gitlab_main;
+    CREATE DATABASE gitlab_ci;
+    GRANT ALL PRIVILEGES ON DATABASE gitlab_main TO gitlab;
+    GRANT ALL PRIVILEGES ON DATABASE gitlab_ci TO gitlab;
