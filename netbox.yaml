@@ -409,7 +409,6 @@ spec:
         repoName: repo1
         options:
          - --type=full
-         - '--annotation="percona.com/backup-name"="netbox-repo1-full-gb9sx"'
       repos:
       - name: repo1
         schedules:
