@@ -409,7 +409,6 @@ spec:
         repoName: repo1
         options:
          - --type=full
-         - --annotation="percona.com/backup-name"="gitlab-repo1-full-wv875"
       repos:
       - name: repo1
         schedules:
