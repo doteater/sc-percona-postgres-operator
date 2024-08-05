@@ -109,7 +109,7 @@ spec:
   image: perconalab/percona-postgresql-operator:main-ppg15-postgres
   imagePullPolicy: Always
   postgresVersion: 15
-#  port: 5432
+  port: 5432
 
 #  expose:
 #    annotations:
@@ -222,6 +222,7 @@ spec:
       replicas: 3
       image: perconalab/percona-postgresql-operator:main-ppg16-pgbouncer
       exposeSuperusers: true
+      port: 5432
 #      resources:
 #        limits:
 #          cpu: 200m
