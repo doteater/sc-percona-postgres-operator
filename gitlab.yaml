@@ -444,7 +444,7 @@ spec:
 #          value: connection-poolers
 
   pmm:
-    enabled: false
+    enabled: true
     image: perconalab/pmm-client:2.42.0
 #    imagePullPolicy: IfNotPresent
     secret: pg-operator-pmm-secret
