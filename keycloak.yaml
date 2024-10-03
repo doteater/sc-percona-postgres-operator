@@ -1,7 +1,7 @@
 apiVersion: pgv2.percona.com/v2
 kind: PerconaPGCluster
 metadata:
-  name: gitlab
+  name: keycloak
   namespace: postgres-operator
 #  finalizers:
 #  - percona.com/delete-pvc
@@ -23,9 +23,9 @@ spec:
 #  openshift: true
 
   users:
-    - name: gitlab
+    - name: keycloak
       databases:
-        - gitlab
+        - keycloak
       options: "SUPERUSER"
 #      password:
 #        type: ASCII
